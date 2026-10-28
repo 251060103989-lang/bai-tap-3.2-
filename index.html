@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Khối hiển thị ảnh phóng to và văn bản mô tả -->
+  <div id="image">
+    Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.
+  </div>
+
+  <!-- Danh sách các ảnh xem trước (thumbnails) -->
+  <div class="gallery">
+    <img class="preview" 
+         alt="Cảnh thiên nhiên đẹp" 
+         src="https://picsum.photos/id/1018/600/400" 
+         onmouseover="upDate(this)" 
+         onmouseout="undo()">
+
+    <img class="preview" 
+         alt="Thành phố lên đèn" 
+         src="https://picsum.photos/id/1015/600/400" 
+         onmouseover="upDate(this)" 
+         onmouseout="undo()">
+
+    <img class="preview" 
+         alt="Rừng cây mùa thu" 
+         src="https://picsum.photos/id/1016/600/400" 
+         onmouseover="upDate(this)" 
+         onmouseout="undo()">
+  </div>
+
+</body>
+</html>
